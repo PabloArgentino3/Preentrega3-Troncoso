@@ -1,0 +1,21 @@
+@import "./variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@mixin sizeLogoRedes ($width, $heigt, $padding, $margin, $efecto) {
+    width: $heigt;
+    height: $heigt;
+    padding: $padding;
+    margin: $margin;
+    transform: $efecto;
+}
+.logoRedes {
+    @include sizeLogoRedes(70,70 ,5 ,5 , transform 1s )
+}
+
+@mixin sizeImageMarcas ($width, $heigth){
+    width: $width;
+    height: $heigth;
+}
+.imagenesMarcas{
+    @include sizeImageMarcas(500px, 500px )
+}
